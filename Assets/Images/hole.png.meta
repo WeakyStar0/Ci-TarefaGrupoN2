@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a6890d57f28c9034f8f0383948c0db0e
+guid: 243d21ab780be4d4d97f8f58d5f0fc2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6267286363613687925
-    second: Livro3_0
+      213: 4387534335697537919
+    second: hole-emoji-2048x887-2gbymp0h_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Livro3_0
+      name: hole-emoji-2048x887-2gbymp0h_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 550
-        height: 549
+        width: 2048
+        height: 887
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 570f7d00ebfd9f650800000000000000
-      internalID: 6267286363613687925
+      spriteID: f7bc41f6b37a3ec30800000000000000
+      internalID: 4387534335697537919
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Livro3_0: 6267286363613687925
+      hole-emoji-2048x887-2gbymp0h_0: 4387534335697537919
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

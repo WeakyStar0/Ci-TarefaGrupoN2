@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a6890d57f28c9034f8f0383948c0db0e
+guid: d2532c058cf4865468394abfcd3b2def
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6267286363613687925
-    second: Livro3_0
+      213: 3125330120094644863
+    second: lollipop-emoji-2048x2048-7jbdcays_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Livro3_0
+      name: lollipop-emoji-2048x2048-7jbdcays_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 550
-        height: 549
+        width: 2048
+        height: 2048
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 570f7d00ebfd9f650800000000000000
-      internalID: 6267286363613687925
+      spriteID: f7af11e7f276f5b20800000000000000
+      internalID: 3125330120094644863
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Livro3_0: 6267286363613687925
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

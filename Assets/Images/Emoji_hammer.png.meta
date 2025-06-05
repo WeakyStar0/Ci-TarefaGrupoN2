@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a6890d57f28c9034f8f0383948c0db0e
+guid: 3bc1ac81665a352439ba97b0f6ca4dc7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6267286363613687925
-    second: Livro3_0
+      213: 66515200287739394
+    second: Emoji_hammer_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Livro3_0
+      name: Emoji_hammer_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 550
-        height: 549
+        y: 24
+        width: 512
+        height: 463
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 570f7d00ebfd9f650800000000000000
-      internalID: 6267286363613687925
+      spriteID: 20e8055e83f4ce000800000000000000
+      internalID: 66515200287739394
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Livro3_0: 6267286363613687925
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
