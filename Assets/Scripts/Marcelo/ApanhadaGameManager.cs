@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class GameManager : MonoBehaviour
+public class ApanhadaGameManager : MonoBehaviour
 {
     [Header("Game Setup")]
     public GameObject[] holes; // Drag UI hole GameObjects here (each must have a child called "Mole")
@@ -83,7 +83,7 @@ IEnumerator SpawnMoles()
         GameObject mole = selectedMoleTransform.gameObject;
 
         MoleBehaviour moleScript = mole.GetComponent<MoleBehaviour>();
-        moleScript.gameManager = this;
+        moleScript.apanhadaGameManager = this;
 
         bool isGood = Random.value > 0.5f;
         moleScript.isGood = isGood;
