@@ -5,10 +5,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class CardsManager : MonoBehaviour
+public class CardsManagerMemoria : MonoBehaviour
 {
     [SerializeField]
-    private List<CardScript> listOfCards;
+    private List<CardScriptMemoria> listOfCards;
 
     [SerializeField]
     private List<Sprite> sprites;
@@ -17,10 +17,10 @@ public class CardsManager : MonoBehaviour
     private AudioSource victoryMusic;
 
     [SerializeField]
-    private TimerScript timerScript;
+    private TimerScriptMemoria timerScript;
 
-    private CardScript firstSelectedItem;
-    private CardScript secondSelectedItem;
+    private CardScriptMemoria firstSelectedItem;
+    private CardScriptMemoria secondSelectedItem;
     private int numberOfMatches = 0;
     private CanvasGroup canvasGroup;
 
@@ -66,7 +66,7 @@ public class CardsManager : MonoBehaviour
         if (firstSelectedItem && secondSelectedItem)
             return;
 
-        var clickedItem = EventSystem.current.currentSelectedGameObject.GetComponentInParent<CardScript>();
+        var clickedItem = EventSystem.current.currentSelectedGameObject.GetComponentInParent<CardScriptMemoria>();
 
         if (!firstSelectedItem)
         {

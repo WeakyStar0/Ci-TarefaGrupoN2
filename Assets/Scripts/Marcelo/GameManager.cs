@@ -112,4 +112,9 @@ IEnumerator SpawnMoles()
     {
         scoreText.text = "Score: " + score;
     }
+
+    internal static void SetSeconds(int v)
+    {
+        throw new System.NotImplementedException();
+    }
 }

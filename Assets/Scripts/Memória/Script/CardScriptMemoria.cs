@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CardScript : MonoBehaviour
+public class CardScriptMemoria : MonoBehaviour
 {
     public Image Below;      // O sprite mostrado ao virar a carta
     public GameObject Cover; // O lado "fechado" da carta

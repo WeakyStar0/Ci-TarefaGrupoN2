@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class ChangeScene : MonoBehaviour
+public class ChangeSceneMemoria : MonoBehaviour
 {
     public void ChangeSceneAction(string sceneName)
     {

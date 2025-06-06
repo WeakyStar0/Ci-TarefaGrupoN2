@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 //Este script deve estar associado a um GameObject que também tenha o TMP_Text
-public class TimerScript : MonoBehaviour
+public class TimerScriptMemoria : MonoBehaviour
 {
     private TMP_Text timerText;
     private float currentTimer;
