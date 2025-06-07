@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Bot\xE3oPuzzle_0": -1267007018428029405
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

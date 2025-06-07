@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Instru\xE7\xF5esPuzzle_0": 1216849303634967735
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
