@@ -3,8 +3,9 @@ using UnityEngine.EventSystems;
 
 public class MoleBehaviour : MonoBehaviour, IPointerClickHandler
 {
-    public GameManager gameManager;
+    public ApanhadaGameManager apanhadaGameManager;
     public bool isGood;
+    public AudioSource audioSource;
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -12,11 +13,13 @@ public class MoleBehaviour : MonoBehaviour, IPointerClickHandler
 
         if (isGood)
         {
-            gameManager.AddScore(1);
+            apanhadaGameManager.AddScore(1);
+            apanhadaGameManager.PlayGoodMoleSound();
         }
         else
         {
-            gameManager.AddScore(-2);
+            apanhadaGameManager.AddScore(-2);
+            apanhadaGameManager.PlayBadMoleSound();
         }
 
         gameObject.SetActive(false);

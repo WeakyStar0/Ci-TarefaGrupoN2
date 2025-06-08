@@ -59,8 +59,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c967d74e0f7fd48a3443d256f31d18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  apanhadaGameManager: {fileID: 0}
   isGood: 0
-  gameManager: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &5374521423453247835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,8 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c967d74e0f7fd48a3443d256f31d18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  apanhadaGameManager: {fileID: 0}
   isGood: 0
-  gameManager: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &3490715673604074245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,5 +228,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 100, y: 100}
-  m_EdgeRadius: 3.67
+  m_Size: {x: 130, y: 130}
+  m_EdgeRadius: 5

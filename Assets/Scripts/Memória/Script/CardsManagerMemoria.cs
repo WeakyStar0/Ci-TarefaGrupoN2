@@ -120,7 +120,7 @@ public class CardsManagerMemoria : MonoBehaviour
 
     IEnumerator LoadFinalScene()
     {
-        GameManager.SetSeconds(timerScript.GetTimerAndStop());
+        MemoriaGameManager.SetSeconds(timerScript.GetTimerAndStop());
         victoryMusic.Play();
         yield return new WaitForSeconds(victoryMusic.clip.length);
         SceneManager.LoadScene("FinalScene");
