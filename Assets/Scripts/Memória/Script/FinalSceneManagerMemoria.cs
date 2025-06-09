@@ -14,6 +14,6 @@ public class FinalSceneManagerMemoria : MonoBehaviour
     public void TestAgain()
     {
         MemoriaGameManager.Reset();
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("MenuJogos");
     }
 }

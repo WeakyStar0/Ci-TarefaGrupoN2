@@ -2,8 +2,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class ChangeSceneMemoria : MonoBehaviour
 {
-    public void ChangeSceneAction(string sceneName)
+    public void ChangeSceneMenu(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("MemoriaMenu");
     }
 }

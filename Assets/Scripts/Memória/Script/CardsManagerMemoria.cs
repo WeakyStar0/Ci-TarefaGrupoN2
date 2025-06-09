@@ -11,7 +11,7 @@ public class CardsManagerMemoria : MonoBehaviour
     private List<CardScriptMemoria> listOfCards;
 
     [SerializeField]
-    private List<Sprite> sprites;
+    private string spritesFolder = "Below"; // Pasta dentro de Resources
 
     [SerializeField]
     private AudioSource victoryMusic;
@@ -19,6 +19,7 @@ public class CardsManagerMemoria : MonoBehaviour
     [SerializeField]
     private TimerScriptMemoria timerScript;
 
+    private List<Sprite> sprites = new List<Sprite>();
     private CardScriptMemoria firstSelectedItem;
     private CardScriptMemoria secondSelectedItem;
     private int numberOfMatches = 0;
@@ -28,9 +29,12 @@ public class CardsManagerMemoria : MonoBehaviour
     {
         canvasGroup = GetComponentInParent<CanvasGroup>();
 
+        // Carrega todos os sprites da pasta especificada
+        LoadSpritesFromFolder();
+
         if (listOfCards.Count / 2 != sprites.Count)
         {
-            throw new ApplicationException("A configuração do GameManager está errada: número de pares de cartas não corresponde ao número de sprites.");
+            throw new ApplicationException($"A configuração está errada: {listOfCards.Count} cartas precisam de {listOfCards.Count/2} sprites, mas encontramos {sprites.Count} sprites na pasta.");
         }
 
         // Atribuir sprites (dois cartões por sprite)
@@ -42,6 +46,17 @@ public class CardsManagerMemoria : MonoBehaviour
         Shuffle(listOfCards);
     }
 
+    private void LoadSpritesFromFolder()
+    {
+        Sprite[] loadedSprites = Resources.LoadAll<Sprite>(spritesFolder);
+        
+        if (loadedSprites == null || loadedSprites.Length == 0)
+        {
+            throw new ApplicationException($"Nenhum sprite encontrado na pasta '{spritesFolder}' dentro de Resources.");
+        }
+
+        sprites.AddRange(loadedSprites);
+    }
     void Shuffle<T>(List<T> list)
     {
         int n = list.Count;
