@@ -24,11 +24,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Puzzle/PuzzleMenu.unity
     guid: bc20e267e5d80234d84b89b4f421bd41
   - enabled: 1
-    path: Assets/Scenes/Memoria/MemoriaMenu.unity
-    guid: 36594ec56d619384eb8a211abf04c573
-  - enabled: 1
     path: Assets/Scenes/Puzzle/PuzzleNivel1.unity
     guid: cdb4146df0e1ace4083afc883bd7e277
+  - enabled: 1
+    path: Assets/Scenes/Puzzle/PuzzleNivel2.unity
+    guid: 6f3709c3bf80fd947b0bcbc62a10b649
+  - enabled: 1
+    path: Assets/Scenes/Puzzle/PuzzleNivel3.unity
+    guid: 674fb603d5b5931458a5677faa0bc0b4
   - enabled: 1
     path: Assets/Scenes/Puzzle/PuzzleResultados.unity
     guid: 7489fb8d0419dd440a607b35d19725e1
@@ -44,6 +47,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Apanhada/ApanhaOsAlimentos3.unity
     guid: db130fd085c63be4fad6a786b0dd9b56
+  - enabled: 1
+    path: Assets/Scenes/Apanhada/ApanhaResultados.unity
+    guid: 04392e1c9db9d07438cf56965a4001ff
+  - enabled: 1
+    path: Assets/Scenes/Memoria/MemoriaMenu.unity
+    guid: 36594ec56d619384eb8a211abf04c573
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
