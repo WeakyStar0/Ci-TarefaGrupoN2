@@ -13,10 +13,14 @@ public class SliderController : MonoBehaviour
         slides[currentIndex].SetActive(true);
     }
 
-    public void ShowPreviousSlide()
-    {
-        slides[currentIndex].SetActive(false);
-        currentIndex = (currentIndex - 1 + slides.Length) % slides.Length;
-        slides[currentIndex].SetActive(true);
-    }
+public void ShowPreviousSlide()
+{
+    slides[currentIndex].SetActive(false);
+    currentIndex--;
+
+    if (currentIndex < 0)
+        currentIndex = slides.Length - 1;
+
+    slides[currentIndex].SetActive(true);
+}
 }
