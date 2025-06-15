@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 989
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 37
+  controlID: 107
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -326,7 +326,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Puzzle
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -336,15 +336,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Puzzle
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\tomas\Work\CI\Mundo Saudavel\Ci-TarefaGrupoN2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 98b50000
-    m_LastClickedID: 46488
+    scrollPos: {x: 0, y: 6}
+    m_SelectedIDs: aab30000
+    m_LastClickedID: 45994
     m_ExpandedIDs: 000000004ab30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -522,7 +522,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 22d2feff50d4feffb2d5feff62d7feff94d8feff48dafeff18dcfeffe4dcfeff68defeff72defeff74defeff44e5feff4ee5feff50e5feffc0eafeff8aebfeff78f1feff54f2feff06f3feffd0f4feff50f6feff9cf7feff68f8feffe4fdfeff3c02ffff4006ffff6c07ffff1a09ffff780bffff260dffff520effff1e0fffff5e3dffffd63effffd648ffffa24affff6c4cffffcc54ffff365affff6662ffffe0b7ffff7af8ffff08b10000b8b50000ecb5000084b90000e0b9000098c00000a0c00000acc00000ccc0000090ce0000b6ce00009acf0000bacf0000d6cf000010d000001af10000d0f1000002f2000014f200003af20000fcf30000
+      m_ExpandedIDs: 0cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
