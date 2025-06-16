@@ -766,6 +766,74 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2536001933815409532, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: maxX
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536001933815409532, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: minX
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536001933815409532, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: spawnY
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536001933815409532, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: spawnInterval
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536001933815409532, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: fruits.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536001933815409532, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: 'fruits.Array.data[1]'
+      value: 
+      objectReference: {fileID: 7254196519571706175, guid: b1bbce269d40c1b48b21fd3e8b8df872, type: 3}
+    - target: {fileID: 2536001933815409532, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: 'fruits.Array.data[2]'
+      value: 
+      objectReference: {fileID: 7364671043856085097, guid: f2cfe5fd21e9dc447b5179f01e3bd239, type: 3}
+    - target: {fileID: 2536001933815409532, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: 'fruits.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1057712939198975650, guid: 092b5fc1f972ae24f80c2d1bc8f39351, type: 3}
+    - target: {fileID: 2536001933815409532, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: 'fruits.Array.data[4]'
+      value: 
+      objectReference: {fileID: 3626566486094944777, guid: 9aa2c440b0049be4080b31ee7e4360c1, type: 3}
+    - target: {fileID: 2536001933815409532, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: 'fruits.Array.data[5]'
+      value: 
+      objectReference: {fileID: 8490312426944512413, guid: 20f5839ca8b754648a2498bc57ea1e87, type: 3}
+    - target: {fileID: 2536001933815409532, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: 'fruits.Array.data[6]'
+      value: 
+      objectReference: {fileID: 3470310023258184236, guid: 7491b176189fbf34eb10b481e05410d1, type: 3}
+    - target: {fileID: 4133174520569647565, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133174520569647565, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133174520569647565, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133174520569647565, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133174520569647565, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133174520569647565, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
+      propertyPath: m_RaycastPadding.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6235573410441227510, guid: bb3ae49f2a91d2b43b2b8f3142084834, type: 3}
       propertyPath: m_Name
       value: Canvas

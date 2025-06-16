@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7197953953b1ace4588c29e021890f80
+guid: c9203a4ae19cf0e4dbe1230911a87582
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5465646382484160345
-    second: I_0
+      213: -8826115565512448151
+    second: cabbage_6108100_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: I_0
+      name: cabbage_6108100_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 20
-        width: 212
-        height: 188
+        x: 0
+        y: 10
+        width: 512
+        height: 492
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a00228c29f1624b0800000000000000
-      internalID: -5465646382484160345
+      spriteID: 967a51be7a6538580800000000000000
+      internalID: -8826115565512448151
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      I_0: -5465646382484160345
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
