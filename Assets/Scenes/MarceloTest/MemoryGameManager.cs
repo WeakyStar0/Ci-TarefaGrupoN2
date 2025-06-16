@@ -6,11 +6,13 @@ using TMPro;
 
 public class MemoryGameManager : MonoBehaviour
 {
-    //score text
-    public TextMeshProUGUI scoreText; // texto para mostrar a pontuação
-    private int score = 0; // variável para armazenar a pontuação
-    public Sprite backSprite; // imagem preta
-    public Sprite[] cardSprites; // imagens dos pares
+    // Score
+    public TextMeshProUGUI scoreText;
+    private int score = 0;
+
+    // Cartas
+    public Sprite backSprite;
+    public Sprite[] cardSprites;
     public GameObject cardPrefab;
     public Transform gridParent;
 
@@ -19,8 +21,20 @@ public class MemoryGameManager : MonoBehaviour
     private CardBehaviour secondSelected = null;
     private bool isChecking = false;
 
+    // Painel de vitória
+    public GameObject winPanel;
+
+    // Contagem de pares
+    private int totalPairs;
+    private int matchedPairs = 0;
+
     void Start()
     {
+        totalPairs = cardSprites.Length;
+        matchedPairs = 0;
+
+        winPanel.SetActive(false);
+        UpdateScoreText();
         SetupCards();
     }
 
@@ -82,8 +96,16 @@ public class MemoryGameManager : MonoBehaviour
             firstSelected.SetMatched();
             secondSelected.SetMatched();
 
-            score += 3; // Adiciona pontos ao score
+            score += 3; // Pontos
+            matchedPairs++;
+
             UpdateScoreText();
+
+            // Verifica se ganhou
+            if (matchedPairs >= totalPairs)
+            {
+                GameWon();
+            }
         }
         else
         {
@@ -91,13 +113,18 @@ public class MemoryGameManager : MonoBehaviour
             firstSelected.FlipBack();
             secondSelected.FlipBack();
 
-            score -= 1; // Subtrai pontos do score
+            score -= 1; // Perde pontos
             UpdateScoreText();
         }
 
         firstSelected = null;
         secondSelected = null;
         isChecking = false;
+    }
+
+    private void GameWon()
+    {
+        winPanel.SetActive(true);
     }
 
     void Shuffle(List<Sprite> list)
@@ -110,6 +137,4 @@ public class MemoryGameManager : MonoBehaviour
             list[rand] = temp;
         }
     }
-
-
 }
