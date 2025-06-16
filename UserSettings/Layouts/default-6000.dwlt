@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 989
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,11 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-<<<<<<< HEAD
-  controlID: 83
-=======
-  controlID: 107
->>>>>>> 446329a770f8de49785fad9948b8b6ae64ebee6d
+  controlID: 37
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -330,11 +326,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
-    - Assets
-=======
-    - Assets/Scenes
->>>>>>> 446329a770f8de49785fad9948b8b6ae64ebee6d
+    - Assets/Images/Livro1
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -344,27 +336,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-<<<<<<< HEAD
-  - Assets
-=======
-  - Assets/Scenes
->>>>>>> 446329a770f8de49785fad9948b8b6ae64ebee6d
+  - Assets/Images/Livro1
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\tomas\Work\CI\Mundo Saudavel\Ci-TarefaGrupoN2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: b6b20000
-    m_LastClickedID: 45750
-    m_ExpandedIDs: 00000000b6b20000b8b20000bab20000bcb20000
-=======
-    scrollPos: {x: 0, y: 6}
-    m_SelectedIDs: aab30000
-    m_LastClickedID: 45994
-    m_ExpandedIDs: 000000004ab30000
->>>>>>> 446329a770f8de49785fad9948b8b6ae64ebee6d
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 64b50000
+    m_LastClickedID: 46436
+    m_ExpandedIDs: 000000005cb30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -393,11 +374,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000b6b20000b8b20000bab20000bcb20000
-=======
-    m_ExpandedIDs: 000000004ab30000
->>>>>>> 446329a770f8de49785fad9948b8b6ae64ebee6d
+    m_ExpandedIDs: 000000005cb30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -498,7 +475,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 373.2
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -545,11 +522,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-<<<<<<< HEAD
-      m_ExpandedIDs: a0f4ffffacf4ffffe8b30000
-=======
-      m_ExpandedIDs: 0cfbffff
->>>>>>> 446329a770f8de49785fad9948b8b6ae64ebee6d
+      m_ExpandedIDs: d89bffffe8d7ffff46d8ffffacf2ffff34f5ffff0cfbffffceb40000dcb40000ecb40000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1237,13 +1210,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-<<<<<<< HEAD
-    m_Target: {x: 601.78125, y: 290.98578, z: 0}
-=======
-    m_Target: {x: 749.5535, y: 232.67555, z: -4.599934}
->>>>>>> 446329a770f8de49785fad9948b8b6ae64ebee6d
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 749.5535, y: 232.67555, z: -4.599934}
+    m_Value: {x: 479.705, y: 280.47336, z: -3.28239}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1293,13 +1262,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< HEAD
-    m_Target: 48.724075
-=======
-    m_Target: 469.99426
->>>>>>> 446329a770f8de49785fad9948b8b6ae64ebee6d
+    m_Target: 10
     speed: 2
-    m_Value: 469.99426
+    m_Value: 338.2392
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1456,15 +1421,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 502.4
-    width: 1171
-    height: 267.59998
-=======
     y: 664
     width: 1952
     height: 322
->>>>>>> 446329a770f8de49785fad9948b8b6ae64ebee6d
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
