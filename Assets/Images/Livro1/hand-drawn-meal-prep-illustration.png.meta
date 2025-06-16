@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3f31104932367dc4f8490eb5cca99fb2
+guid: 45f50d96c6f612d4f9ebf0fa4a2062d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7639832244356932578
-    second: chocolate-bar-emoji-2047x2048-us4ussqf_0
+      213: -4812033294606971089
+    second: hand-drawn-meal-prep-illustration_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chocolate-bar-emoji-2047x2048-us4ussqf_0
+      name: hand-drawn-meal-prep-illustration_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2047
-        height: 2048
+        x: 164
+        y: 272
+        width: 1673
+        height: 1325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1c97832d0dd9f590800000000000000
-      internalID: -7639832244356932578
+      spriteID: f2f499bb639383db0800000000000000
+      internalID: -4812033294606971089
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      chocolate-bar-emoji-2047x2048-us4ussqf_0: -7639832244356932578
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

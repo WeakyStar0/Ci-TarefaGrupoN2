@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3f31104932367dc4f8490eb5cca99fb2
+guid: 6a4dbafc6201c3e42980d98d4607bd1e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7639832244356932578
-    second: chocolate-bar-emoji-2047x2048-us4ussqf_0
+      213: 3251294998713178843
+    second: glass-water_3608405_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chocolate-bar-emoji-2047x2048-us4ussqf_0
+      name: glass-water_3608405_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2047
-        height: 2048
+        x: 3
+        y: 3
+        width: 506
+        height: 506
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1c97832d0dd9f590800000000000000
-      internalID: -7639832244356932578
+      spriteID: bda9d42439bee1d20800000000000000
+      internalID: 3251294998713178843
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      chocolate-bar-emoji-2047x2048-us4ussqf_0: -7639832244356932578
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
