@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 2233c418a3d4a1c45aab8d66d9f5418a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 999815118692426366
+    second: Mundo Saudavel_0
+  - first:
+      213: -1438102372239789611
+    second: Mundo Saudavel_1
+  - first:
+      213: -4405195306356754989
+    second: Mundo Saudavel_2
+  - first:
+      213: -1227034309324785889
+    second: Mundo Saudavel_3
+  - first:
+      213: 6716721212555098825
+    second: Mundo Saudavel_4
+  - first:
+      213: 1406039163924775050
+    second: Mundo Saudavel_5
+  - first:
+      213: -2543906651241551075
+    second: Mundo Saudavel_6
+  - first:
+      213: -2788868377181807087
+    second: Mundo Saudavel_7
+  - first:
+      213: 1550799089195115175
+    second: Mundo Saudavel_8
+  - first:
+      213: 2859617875825753766
+    second: Mundo Saudavel_9
+  - first:
+      213: -5113028207328466966
+    second: Mundo Saudavel_10
+  - first:
+      213: -1566501340259302301
+    second: Mundo Saudavel_11
+  - first:
+      213: -4199563915415565701
+    second: Mundo Saudavel_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mundo Saudavel_0
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 499
+        width: 417
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e722abe9d8e00ed00800000000000000
+      internalID: 999815118692426366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo Saudavel_1
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 502
+        width: 323
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d130080385da0ce0800000000000000
+      internalID: -1438102372239789611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo Saudavel_2
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 498
+        width: 302
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d53366653a9dd2c0800000000000000
+      internalID: -4405195306356754989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo Saudavel_3
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 498
+        width: 282
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17ba79fbc2b8fee0800000000000000
+      internalID: -1227034309324785889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo Saudavel_4
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 501
+        width: 310
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca7da92b56963d50800000000000000
+      internalID: 6716721212555098825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo Saudavel_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 236
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80060a8b21438310800000000000000
+      internalID: 1406039163924775050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo Saudavel_6
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 3
+        width: 281
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b6efef06a32bcd0800000000000000
+      internalID: -2543906651241551075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo Saudavel_7
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 2
+        width: 322
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e12ccacf2fb49d0800000000000000
+      internalID: -2788868377181807087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo Saudavel_8
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 0
+        width: 283
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2697d1e8b858510800000000000000
+      internalID: 1550799089195115175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo Saudavel_9
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 3
+        width: 281
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae73f1ae476fa720800000000000000
+      internalID: 2859617875825753766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo Saudavel_10
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 6
+        width: 318
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae762a77fefda09b0800000000000000
+      internalID: -5113028207328466966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo Saudavel_11
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 3
+        width: 297
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364cba9a45ba24ae0800000000000000
+      internalID: -1566501340259302301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo Saudavel_12
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 4
+        width: 257
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a4b128ed628b5c0800000000000000
+      internalID: -4199563915415565701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mundo Saudavel_0: 999815118692426366
+      Mundo Saudavel_1: -1438102372239789611
+      Mundo Saudavel_10: -5113028207328466966
+      Mundo Saudavel_11: -1566501340259302301
+      Mundo Saudavel_12: -4199563915415565701
+      Mundo Saudavel_2: -4405195306356754989
+      Mundo Saudavel_3: -1227034309324785889
+      Mundo Saudavel_4: 6716721212555098825
+      Mundo Saudavel_5: 1406039163924775050
+      Mundo Saudavel_6: -2543906651241551075
+      Mundo Saudavel_7: -2788868377181807087
+      Mundo Saudavel_8: 1550799089195115175
+      Mundo Saudavel_9: 2859617875825753766
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
