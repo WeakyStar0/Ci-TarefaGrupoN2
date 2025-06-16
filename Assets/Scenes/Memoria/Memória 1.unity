@@ -616,9 +616,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccdab5eeac8a2a944b02c049b1602e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
-  currentTimer: 0
-  isCounting: 0
 --- !u!1001 &711285430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -940,7 +937,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 880102528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f897a290db8729c48897348145276b42, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a6a416f2af48be4abc54ebdc8fcf392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &923048107
@@ -1150,20 +1147,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fb0f8706698fae48b069eb69ba12619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listOfCards: []
-  spritesFolderPath: Below
+  listOfCards:
+  - {fileID: 9007192397650366045}
+  - {fileID: 1617951010}
+  - {fileID: 1448884399}
+  - {fileID: 1119229824}
   sprites:
   - {fileID: 21300000, guid: b0d329a3728aaaa41a1656b272505f57, type: 3}
   - {fileID: 21300000, guid: d647110fdf8f0b4418bbc85bcf78d334, type: 3}
-  - {fileID: 21300000, guid: 072e75b7795006e4f9dbc8ba424c87dd, type: 3}
-  - {fileID: 21300000, guid: 1e2875837e9ec554e81f75f1b063470a, type: 3}
-  - {fileID: 21300000, guid: 99fb2de3c511deb44b87d5755ec104bd, type: 3}
-  - {fileID: 21300000, guid: de1a9944e9709e949b9ec8239762e676, type: 3}
-  - {fileID: 21300000, guid: 0168c3f6c98adf34aac88094e9fa9d7a, type: 3}
-  - {fileID: 21300000, guid: e4797eb3892c2f9429431eb2d28570b6, type: 3}
-  - {fileID: 21300000, guid: b4c6ed100aecab3488fe5079cdaa8d96, type: 3}
   victoryMusic: {fileID: 0}
   timerScript: {fileID: 0}
+--- !u!114 &1119229824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2077912574009006883, guid: 6b0d3cf61e1d2eb4e82a04a772c053a6, type: 3}
+  m_PrefabInstance: {fileID: 923048107}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b32e0876d462a8468c887d0598a6312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1412896220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1377,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8081474851648867462, guid: 6b0d3cf61e1d2eb4e82a04a772c053a6, type: 3}
   m_PrefabInstance: {fileID: 1418879111}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1448884399 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2077912574009006883, guid: 6b0d3cf61e1d2eb4e82a04a772c053a6, type: 3}
+  m_PrefabInstance: {fileID: 1418879111}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b32e0876d462a8468c887d0598a6312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1617951010 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2077912574009006883, guid: 6b0d3cf61e1d2eb4e82a04a772c053a6, type: 3}
+  m_PrefabInstance: {fileID: 711285430}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b32e0876d462a8468c887d0598a6312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1832660333 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5490764862330680120, guid: 6b0d3cf61e1d2eb4e82a04a772c053a6, type: 3}
@@ -1657,6 +1683,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8081474851648867462, guid: 6b0d3cf61e1d2eb4e82a04a772c053a6, type: 3}
   m_PrefabInstance: {fileID: 9007192397650366043}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9007192397650366045 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2077912574009006883, guid: 6b0d3cf61e1d2eb4e82a04a772c053a6, type: 3}
+  m_PrefabInstance: {fileID: 9007192397650366043}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b32e0876d462a8468c887d0598a6312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
