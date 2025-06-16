@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7f6bb9600611b9e46830fc938abefc17
+guid: 3f31104932367dc4f8490eb5cca99fb2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5898895346383444331
-    second: row-4-column-3_0
+      213: -7639832244356932578
+    second: chocolate-bar-emoji-2047x2048-us4ussqf_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: row-4-column-3_0
+      name: chocolate-bar-emoji-2047x2048-us4ussqf_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 750
-        height: 500
+        width: 2047
+        height: 2048
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b69d36850161dd150800000000000000
-      internalID: 5898895346383444331
+      spriteID: e1c97832d0dd9f590800000000000000
+      internalID: -7639832244356932578
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      row-4-column-3_0: 5898895346383444331
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
