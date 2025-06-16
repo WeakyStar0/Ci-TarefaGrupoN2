@@ -11,7 +11,7 @@ public class CardsManagerMemoria : MonoBehaviour
     private List<CardScriptMemoria> listOfCards;
 
     [SerializeField]
-    private string spritesFolder = "Below"; // Pasta dentro de Resources
+    private string spritesFolder = "Below";
 
     [SerializeField]
     private AudioSource victoryMusic;
@@ -25,19 +25,24 @@ public class CardsManagerMemoria : MonoBehaviour
     private int numberOfMatches = 0;
     private CanvasGroup canvasGroup;
 
+    private void Awake()
+    {
+        if (listOfCards == null || listOfCards.Count == 0)
+        {
+            Debug.LogError("Lista de cartas não configurada!");
+        }
+    }
+
     public void Start()
     {
         canvasGroup = GetComponentInParent<CanvasGroup>();
-
-        // Carrega todos os sprites da pasta especificada
         LoadSpritesFromFolder();
 
         if (listOfCards.Count / 2 != sprites.Count)
         {
-            throw new ApplicationException($"A configuração está errada: {listOfCards.Count} cartas precisam de {listOfCards.Count/2} sprites, mas encontramos {sprites.Count} sprites na pasta.");
+            throw new ApplicationException($"A configuração está errada: {listOfCards.Count} cartas precisam de {listOfCards.Count / 2} sprites, mas encontramos {sprites.Count} sprites na pasta.");
         }
 
-        // Atribuir sprites (dois cartões por sprite)
         for (int i = 0; i < listOfCards.Count; i++)
         {
             listOfCards[i].SetBelowImage(sprites[i / 2]);
@@ -49,7 +54,7 @@ public class CardsManagerMemoria : MonoBehaviour
     private void LoadSpritesFromFolder()
     {
         Sprite[] loadedSprites = Resources.LoadAll<Sprite>(spritesFolder);
-        
+
         if (loadedSprites == null || loadedSprites.Length == 0)
         {
             throw new ApplicationException($"Nenhum sprite encontrado na pasta '{spritesFolder}' dentro de Resources.");
@@ -57,14 +62,17 @@ public class CardsManagerMemoria : MonoBehaviour
 
         sprites.AddRange(loadedSprites);
     }
-    void Shuffle<T>(List<T> list)
+
+    private void Shuffle<T>(List<T> list)
     {
         int n = list.Count;
         while (n > 1)
         {
             n--;
             int k = UnityEngine.Random.Range(0, n + 1);
-            (list[k], list[n]) = (list[n], list[k]);
+            T value = list[k];
+            list[k] = list[n];
+            list[n] = value;
         }
 
         for (int i = 0; i < listOfCards.Count; i++)
@@ -82,6 +90,9 @@ public class CardsManagerMemoria : MonoBehaviour
             return;
 
         var clickedItem = EventSystem.current.currentSelectedGameObject.GetComponentInParent<CardScriptMemoria>();
+
+        if (clickedItem == null || clickedItem == firstSelectedItem)
+            return;
 
         if (!firstSelectedItem)
         {
@@ -133,11 +144,34 @@ public class CardsManagerMemoria : MonoBehaviour
         }
     }
 
-    IEnumerator LoadFinalScene()
+    private IEnumerator LoadFinalScene()
     {
         MemoriaGameManager.SetSeconds(timerScript.GetTimerAndStop());
         victoryMusic.Play();
         yield return new WaitForSeconds(victoryMusic.clip.length);
-        SceneManager.LoadScene("FinalScene");
+
+        if (MemoriaGameManager.GetCurrentLevel() < 3)
+        {
+            MemoriaGameManager.SetNextLevel();
+            SceneManager.LoadScene("MemoriaLevel" + MemoriaGameManager.GetCurrentLevel());
+        }
+        else
+        {
+            SceneManager.LoadScene("MemoriaFinalScene");
+        }
+    }
+
+    public void ResetGame()
+    {
+        numberOfMatches = 0;
+        firstSelectedItem = null;
+        secondSelectedItem = null;
+        timerScript.ResetTimer();
+        Shuffle(listOfCards);
+        
+        foreach (var card in listOfCards)
+        {
+            card.EnableCover();
+        }
     }
 }

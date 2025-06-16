@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+
 public class FinalSceneManagerMemoria : MonoBehaviour
 {
     [SerializeField]
     private TMP_Text answersText;
+
     public void Start()
     {
-        answersText.text = MemoriaGameManager.GetSeconds().ToString();
+        int seconds = MemoriaGameManager.GetSeconds();
+        answersText.text = $"Nível {MemoriaGameManager.GetCurrentLevel()} completo em {seconds / 60:00}:{seconds % 60:00}";
     }
-    public void TestAgain()
+
+    public void PlayAgain()
     {
         MemoriaGameManager.Reset();
-        SceneManager.LoadScene("MenuJogos");
+        SceneManager.LoadScene("MemoriaMenu");
     }
 }

@@ -3,21 +3,30 @@ using UnityEngine.UI;
 
 public class CardScriptMemoria : MonoBehaviour
 {
-    public Image Below;      // O sprite mostrado ao virar a carta
-    public GameObject Cover; // O lado "fechado" da carta
+    public Image Below;
+    public GameObject Cover;
 
     public void SetBelowImage(Sprite sprite)
     {
-        Below.sprite = sprite;
+        if (Below != null)
+        {
+            Below.sprite = sprite;
+        }
     }
 
     public void DisableCover()
     {
-        Cover.SetActive(false);
+        if (Cover != null)
+        {
+            Cover.SetActive(false);
+        }
     }
 
     public void EnableCover()
     {
-        Cover.SetActive(true);
+        if (Cover != null)
+        {
+            Cover.SetActive(true);
+        }
     }
 }
