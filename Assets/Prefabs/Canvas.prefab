@@ -227,8 +227,9 @@ GameObject:
   - component: {fileID: 4028113189605288615}
   - component: {fileID: 9055800667580639966}
   - component: {fileID: 4133174520569647565}
+  - component: {fileID: 2536001933815409532}
   m_Layer: 5
-  m_Name: Fruta
+  m_Name: FruitSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -291,6 +292,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2536001933815409532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6854730626038218455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c75684a2a5256d248922904910808eaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruits:
+  - {fileID: 4430565572408384067, guid: fe925d63b172d4645a1f1a75900e659e, type: 3}
+  spawnInterval: 0.7
+  minX: -500
+  maxX: 500
 --- !u!1 &7916849491402931861
 GameObject:
   m_ObjectHideFlags: 0
