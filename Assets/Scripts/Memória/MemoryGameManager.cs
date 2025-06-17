@@ -6,31 +6,43 @@ using TMPro;
 
 public class MemoryGameManager : MonoBehaviour
 {
-    // Score
+    [Header("Pontuação")]
     public TextMeshProUGUI scoreText;
     private int score = 0;
 
-    // Cartas
+    [Header("Configuração do Jogo")]
+    [Range(1, 30)]
+    public int numberOfPairs = 6; // Número de pares definidos no Inspetor
     public Sprite backSprite;
-    public Sprite[] cardSprites;
+    public Sprite[] availableCardSprites; // Lista completa de sprites para sortear
     public GameObject cardPrefab;
     public Transform gridParent;
+
+    [Header("Painel de Vitória")]
+    public GameObject winPanel;
 
     private List<CardBehaviour> spawnedCards = new List<CardBehaviour>();
     private CardBehaviour firstSelected = null;
     private CardBehaviour secondSelected = null;
     private bool isChecking = false;
 
-    // Painel de vitória
-    public GameObject winPanel;
-
-    // Contagem de pares
     private int totalPairs;
     private int matchedPairs = 0;
 
+    // Sprites sorteados para a partida atual
+    private Sprite[] cardSprites;
+
     void Start()
     {
-        totalPairs = cardSprites.Length;
+        // Garante que o número de pares não exceda os sprites disponíveis
+        numberOfPairs = Mathf.Clamp(numberOfPairs, 1, availableCardSprites.Length);
+
+        // Sorteia os sprites que serão usados nesta partida
+        List<Sprite> selectedSprites = new List<Sprite>(availableCardSprites);
+        Shuffle(selectedSprites);
+        cardSprites = selectedSprites.GetRange(0, numberOfPairs).ToArray();
+
+        totalPairs = numberOfPairs;
         matchedPairs = 0;
 
         winPanel.SetActive(false);
@@ -52,7 +64,7 @@ public class MemoryGameManager : MonoBehaviour
     {
         List<Sprite> allSprites = new List<Sprite>();
 
-        // Duplicar pares
+        // Cria os pares duplicando os sprites sorteados
         foreach (var sprite in cardSprites)
         {
             allSprites.Add(sprite);
@@ -61,6 +73,7 @@ public class MemoryGameManager : MonoBehaviour
 
         Shuffle(allSprites);
 
+        // Instancia as cartas
         foreach (var sprite in allSprites)
         {
             GameObject cardObj = Instantiate(cardPrefab, gridParent);
@@ -92,16 +105,14 @@ public class MemoryGameManager : MonoBehaviour
 
         if (firstSelected.GetSprite() == secondSelected.GetSprite())
         {
-            // Cartas corretas: mantêm-se viradas
             firstSelected.SetMatched();
             secondSelected.SetMatched();
 
-            score += 3; // Pontos
+            score += 3;
             matchedPairs++;
 
             UpdateScoreText();
 
-            // Verifica se ganhou
             if (matchedPairs >= totalPairs)
             {
                 GameWon();
@@ -109,11 +120,10 @@ public class MemoryGameManager : MonoBehaviour
         }
         else
         {
-            // Cartas erradas: voltam para trás
             firstSelected.FlipBack();
             secondSelected.FlipBack();
 
-            score -= 1; // Perde pontos
+            score -= 1;
             UpdateScoreText();
         }
 
