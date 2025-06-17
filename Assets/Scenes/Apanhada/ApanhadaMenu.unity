@@ -455,7 +455,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Instru\xE7\xF5es"
+  m_text: "Apanha todas as frutas o mais rapidamente possivel!\n\nN\xE3o apanhes
+    os doces!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 854ca02da0d576d478b70737a2b51791, type: 2}
   m_sharedMaterial: {fileID: 8527191642312953906, guid: 854ca02da0d576d478b70737a2b51791, type: 2}
@@ -520,7 +521,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 66.20105, y: 0, z: 52.26355, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -966,7 +967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d548e46431d0e544be7ca3dc5476dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickSound: {fileID: 8300000, guid: 4c98dbe03ca81104b96b951a5502b8ef, type: 3}
 --- !u!4 &1017534043
 Transform:
   m_ObjectHideFlags: 0
