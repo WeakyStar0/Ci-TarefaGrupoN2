@@ -1,3 +1,4 @@
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public static class PuzzleGameManager
@@ -5,7 +6,6 @@ public static class PuzzleGameManager
     private static int _rightAnswers = 0;
     private static int _wrongAnswers = 0;
 
-    // Novo: Quantas peças corretas são necessárias para vencer o nível
     public static int requiredCorrectAnswers = 4;
 
     public static void IncrementRightAnswer()
@@ -13,6 +13,7 @@ public static class PuzzleGameManager
         _rightAnswers++;
         if (_rightAnswers >= requiredCorrectAnswers)
         {
+            GameObject.FindObjectOfType<PuzzleTimer>().StopTimer();
             SceneManager.LoadScene("PuzzleResultados");
         }
     }
@@ -36,5 +37,6 @@ public static class PuzzleGameManager
     {
         _rightAnswers = 0;
         _wrongAnswers = 0;
+        GameObject.FindObjectOfType<PuzzleTimer>().ResetTimer();
     }
 }
