@@ -1160,8 +1160,8 @@ MonoBehaviour:
   - {fileID: 3470310023258184236, guid: 7491b176189fbf34eb10b481e05410d1, type: 3}
   spawnInterval: 0.15
   minX: -10
-  maxX: 550
-  spawnY: 600
+  maxX: 1920
+  spawnY: 1080
 --- !u!114 &6518974677372407944
 MonoBehaviour:
   m_ObjectHideFlags: 0
