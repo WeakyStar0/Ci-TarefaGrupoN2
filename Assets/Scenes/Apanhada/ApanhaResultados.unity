@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d548e46431d0e544be7ca3dc5476dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 4c98dbe03ca81104b96b951a5502b8ef, type: 3}
 --- !u!4 &7285350
 Transform:
   m_ObjectHideFlags: 0
@@ -918,9 +919,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b575a42544c866742964321c1451af2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelText: {fileID: 1602648606}
   scoreText: {fileID: 1539274484}
   highScoreText: {fileID: 405067138}
+  levelText: {fileID: 1602648606}
 --- !u!4 &1499894680
 Transform:
   m_ObjectHideFlags: 0

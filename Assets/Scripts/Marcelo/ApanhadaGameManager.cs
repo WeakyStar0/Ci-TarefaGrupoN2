@@ -50,6 +50,9 @@ public class ApanhadaGameManager : MonoBehaviour
     private string saveFilePath;
     private GameData gameData;
 
+    // Contador para o pitch dinâmico do som dos moles bons
+    private int goodMoleHitCount = 0;
+
     void Start()
     {
         levelNumber = PlayerPrefs.GetInt("CurrentLevel", levelNumber);
@@ -61,6 +64,7 @@ public class ApanhadaGameManager : MonoBehaviour
     public void StartGame()
     {
         score = 0;
+        goodMoleHitCount = 0; // Reseta o pitch ao começar o jogo
         UpdateScoreText();
 
         timeLeft = gameDuration;
@@ -154,11 +158,27 @@ public class ApanhadaGameManager : MonoBehaviour
         scoreText.text = $"Score: {score}\nHigh Score: {GetHighScoreForLevel(levelNumber)}";
     }
 
+    // Som dos moles bons com pitch progressivo sem limite
     public void PlayGoodMoleSound()
     {
         if (audioSource != null && goodMoleSound != null)
         {
-            audioSource.PlayOneShot(goodMoleSound);
+            float basePitch = 0.8f;
+            float pitchIncrement = 0.05f;
+
+            float pitch = basePitch + (goodMoleHitCount * pitchIncrement);
+
+            // Criar fonte temporária para tocar som com pitch personalizado
+            GameObject tempGO = new GameObject("TempAudio");
+            tempGO.transform.SetParent(transform);
+            AudioSource tempSource = tempGO.AddComponent<AudioSource>();
+            tempSource.clip = goodMoleSound;
+            tempSource.pitch = pitch;
+            tempSource.Play();
+
+            Destroy(tempGO, goodMoleSound.length / pitch);
+
+            goodMoleHitCount++; // Incrementar contador
         }
     }
 
@@ -166,6 +186,7 @@ public class ApanhadaGameManager : MonoBehaviour
     {
         if (audioSource != null && badMoleSound != null)
         {
+            audioSource.pitch = 1f; // pitch normal para o som errado
             audioSource.PlayOneShot(badMoleSound);
         }
     }

@@ -169,8 +169,8 @@ MonoBehaviour:
   timerText: {fileID: 1460498799}
   scoreText: {fileID: 225925582}
   audioSource: {fileID: 37737132}
-  goodMoleSound: {fileID: 8300000, guid: f6916348301685c429d86e9ac638427b, type: 3}
-  badMoleSound: {fileID: 8300000, guid: 6dda2287cce696845a7c5d5d81d0e014, type: 3}
+  goodMoleSound: {fileID: 8300000, guid: 3ad49b5f8ce16f04f9c7b6565c2fe73c, type: 3}
+  badMoleSound: {fileID: 8300000, guid: c9be257167fcaf54e8cf75f8e6320899, type: 3}
 --- !u!4 &37737131
 Transform:
   m_ObjectHideFlags: 0

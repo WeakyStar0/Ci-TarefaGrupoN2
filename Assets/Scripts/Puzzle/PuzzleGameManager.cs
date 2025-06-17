@@ -11,6 +11,8 @@ public static class PuzzleGameManager
     public static void IncrementRightAnswer()
     {
         _rightAnswers++;
+        PuzzleAudioManager.Instance?.PlayCorrectSound(_rightAnswers); // <-- com pitch dinâmico
+
         if (_rightAnswers >= requiredCorrectAnswers)
         {
             GameObject.FindObjectOfType<PuzzleTimer>().StopTimer();
@@ -18,9 +20,13 @@ public static class PuzzleGameManager
         }
     }
 
+
     public static void IncrementWrongAnswer()
     {
         _wrongAnswers++;
+
+        // Tocar som de resposta errada
+        PuzzleAudioManager.Instance?.PlayWrongSound();
     }
 
     public static int GetRightAnswer()

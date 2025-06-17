@@ -1,2 +1,18 @@
 fileFormatVersion: 2
 guid: 983295f2bcf3bd049bab81015d43212c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - goodMoleSprite: {instanceID: 0}
+  - badMoleSprite: {instanceID: 0}
+  - timerText: {instanceID: 0}
+  - scoreText: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - goodMoleSound: {fileID: 8300000, guid: 3ad49b5f8ce16f04f9c7b6565c2fe73c, type: 3}
+  - badMoleSound: {fileID: 8300000, guid: c9be257167fcaf54e8cf75f8e6320899, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

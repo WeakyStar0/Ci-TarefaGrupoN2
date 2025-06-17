@@ -3,21 +3,45 @@ using UnityEngine.SceneManagement;
 
 public class LoadScenes : MonoBehaviour
 {
-    // Método público para carregar uma cena pelo nome (para ligar ao botão)
+    private void Awake()
+    {
+        // Regista callback para sceneLoaded
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        // Desregista callback para evitar leaks
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Garantir que o cursor está visível e desbloqueado sempre que uma cena carregar
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    private void PlayClickSound()
+    {
+        UIAudioManager.Instance?.PlayClickSound();
+    }
+
     public void LoadSceneByName(string sceneName)
     {
+        PlayClickSound();
         SceneManager.LoadScene(sceneName);
     }
 
-    // Método para carregar uma cena pelo índice (opcional)
     public void LoadSceneByIndex(int sceneIndex)
     {
+        PlayClickSound();
         SceneManager.LoadScene(sceneIndex);
     }
 
-    // Método para voltar à cena anterior
     public void GoBack()
     {
+        PlayClickSound();
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex > 0)
         {
@@ -29,16 +53,16 @@ public class LoadScenes : MonoBehaviour
         }
     }
 
-    // Método para reiniciar a cena atual
     public void ReloadCurrentScene()
     {
+        PlayClickSound();
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex);
     }
 
-    // Método para fechar a aplicação (funciona só no build)
     public void QuitApp()
     {
+        PlayClickSound();
         Application.Quit();
         Debug.Log("Aplicação fechada.");
     }
